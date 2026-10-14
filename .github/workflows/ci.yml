@@ -11,3 +11,6 @@ jobs:
        - run: echo "Pull Request test"
        - run: echo "Second step"
        - run: echo "Third step"
+       - if:  success()
+         run: echo "Everything is OK!"
+
